@@ -60,7 +60,6 @@ function M.config()
     "yamlls",
     "marksman",
     "clangd",
-    "clangd-format"
   }
 
   local default_diagnostic_config = {
