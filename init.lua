@@ -34,6 +34,7 @@ spec "user.toggleterm"
 spec "user.bufdelete"
 -- Extras
 spec "user.extras.colorizer"
+spec "user.extras.obsidian"
 -- spec "user.extras.smoothie"
 spec "user.extras.neoscroll"
 spec "user.extras.copilot"
