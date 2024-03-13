@@ -10,9 +10,11 @@ local M = {
 function M.config()
   local wk = require "which-key"
   wk.register {
-    ["<leader>od"] = { "<cmd>lua require('obsidian').util.toggle_checkbox()<cr>", "Toggle check-boxes" },
+    ["<leader>od"] = { "<cmd>lua require('obsidian').util.toggle_checkbox()<cr>", "Toggle check-box" },
     ["<leader>oo"] = { "<cmd>:ObsidianOpen<cr>", "Open Current Buffer" },
     ["<leader>ot"] = { "<cmd>:ObsidianToday<cr>", "Open/Creates Today's Note" },
+    ["<leader>oT"] = { "<cmd>:ObsidianTemplate<cr>", "Open Template Palette" },
+    ["<leader>of"] = { "<cmd>:ObsidianSearch<cr>", "Search/Create New Note" },
   }
 
   local home = os.getenv "HOME"
