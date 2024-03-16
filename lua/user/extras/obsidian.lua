@@ -1,5 +1,6 @@
 local M = {
-  "epwalsh/obsidian.nvim",
+  "jmartinn/obsidian.nvim",
+  branch = "create_note_with_path",
   lazy = true,
   ft = { "markdown" },
   dependencies = {
@@ -10,11 +11,12 @@ local M = {
 function M.config()
   local wk = require "which-key"
   wk.register {
-    ["<leader>od"] = { "<cmd>lua require('obsidian').util.toggle_checkbox()<cr>", "Toggle check-box" },
+    ["<leader>od"] = { "<cmd>lua require('obsidian').util.toggle_checkbox()<cr>", "Toggle Check-Box" },
     ["<leader>oo"] = { "<cmd>:ObsidianOpen<cr>", "Open Current Buffer" },
-    ["<leader>ot"] = { "<cmd>:ObsidianToday<cr>", "Open/Creates Today's Note" },
-    ["<leader>oT"] = { "<cmd>:ObsidianTemplate<cr>", "Open Template Palette" },
-    ["<leader>of"] = { "<cmd>:ObsidianSearch<cr>", "Search/Create New Note" },
+    ["<leader>ot"] = { "<cmd>:ObsidianToday<cr>", "Open/Create Today's Note" },
+    ["<leader>oT"] = { "<cmd>:ObsidianTemplate<cr>", "Template Palette" },
+    ["<leader>of"] = { "<cmd>:ObsidianSearch<cr>", "Search Note" },
+    ["<leader>oc"] = { "<cmd>:ObsidianCreate<cr>", "Create New Note" },
   }
 
   local home = os.getenv "HOME"
