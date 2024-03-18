@@ -1,6 +1,6 @@
 local M = {
-  "jmartinn/obsidian.nvim",
-  branch = "create_note_with_path",
+  "epwalsh/obsidian.nvim",
+  -- branch = "create_note_with_path",
   lazy = true,
   ft = { "markdown" },
   dependencies = {
@@ -14,9 +14,9 @@ function M.config()
     ["<leader>od"] = { "<cmd>lua require('obsidian').util.toggle_checkbox()<cr>", "Toggle Check-Box" },
     ["<leader>oo"] = { "<cmd>:ObsidianOpen<cr>", "Open Current Buffer" },
     ["<leader>ot"] = { "<cmd>:ObsidianToday<cr>", "Open/Create Today's Note" },
-    ["<leader>oT"] = { "<cmd>:ObsidianTemplate<cr>", "Template Palette" },
+    ["<leader>ok"] = { "<cmd>:ObsidianTemplate<cr>", "Template Palette" },
     ["<leader>of"] = { "<cmd>:ObsidianSearch<cr>", "Search Note" },
-    ["<leader>oc"] = { "<cmd>:ObsidianCreate<cr>", "Create New Note" },
+    ["<leader>oc"] = { "<cmd>:ObsidianNew<cr>", "Create New Note" },
   }
 
   local home = os.getenv "HOME"
@@ -31,7 +31,7 @@ function M.config()
     log_level = vim.log.levels.INFO,
 
     daily_notes = {
-      folder = "Daily Notes",
+      folder = "0-Daily-Notes",
       template = "Daily Notes.md",
     },
 
