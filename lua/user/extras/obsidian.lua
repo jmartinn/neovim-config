@@ -17,6 +17,8 @@ function M.config()
     ["<leader>ok"] = { "<cmd>:ObsidianTemplate<cr>", "Template Palette" },
     ["<leader>of"] = { "<cmd>:ObsidianSearch<cr>", "Search Note" },
     ["<leader>oc"] = { "<cmd>:ObsidianNew<cr>", "Create New Note" },
+    ["<leader>ob"] = { "<cmd>:ObsidianBacklinks<cr>", "Show Backlinks" },
+    ["<leader>ol"] = { "<cmd>:ObsidianLinks<cr>", "Show Links" },
   }
 
   local home = os.getenv "HOME"
@@ -159,8 +161,6 @@ function M.config()
       -- Optional, configure key mappings for the picker. These are the defaults.
       -- Not all pickers support all mappings.
       note_mappings = {
-        -- Create a new note from your query.
-        new = "<C-x>",
         -- Insert a link to the selected note.
         insert_link = "<C-l>",
       },
