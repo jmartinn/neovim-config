@@ -1,0 +1,3 @@
+#!/bin/bash
+
+find "$REPOS" -name 'node_modules' -type d -prune | fzf -m --preview 'du -sh {}' | xargs rm -rf
