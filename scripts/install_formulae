@@ -1,0 +1,7 @@
+#!/bin/bash
+
+BREW_FORMULAE=$DOTFILES/homebrew/brew_formulae
+
+while read -r package; do
+  brew install "$package"
+done < $BREW_FORMULAE

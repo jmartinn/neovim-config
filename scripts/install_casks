@@ -1,0 +1,7 @@
+#!/bin/bash
+
+BREW_CASKS=$DOTFILES/homebrew/brew_casks
+
+while read -r cask; do
+  brew install --cask "$cask"
+done < $BREW_FORMULAE

@@ -8,6 +8,7 @@ export ZSH="$HOME/.oh-my-zsh"
 
 # Directories
 export REPOS="$HOME/Documents/projects/"
+export DOTFILES="$HOME/dotfiles"
 export SCRIPTS="$HOME/scripts"
 export GITUSER="jmartinn"
 export GHREPOS="$REPOS/github.com/$GITUSER"
