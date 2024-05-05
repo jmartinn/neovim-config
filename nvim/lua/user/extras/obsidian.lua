@@ -18,6 +18,7 @@ function M.config()
     ["<leader>oc"] = { "<cmd>:ObsidianNew<cr>", "Create New Note" },
     ["<leader>ob"] = { "<cmd>:ObsidianBacklinks<cr>", "Show Backlinks" },
     ["<leader>ol"] = { "<cmd>:ObsidianLinks<cr>", "Show Links" },
+    ["<leader>oT"] = { "<cmd>:ObsidianTags<cr>", "Search By Tag" }
   }
 
   local home = os.getenv "HOME"
