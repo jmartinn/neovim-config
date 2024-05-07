@@ -1,3 +1,33 @@
 #!/bin/bash
 
-find "$REPOS" -name 'node_modules' -type d -prune | fzf -m --preview 'du -sh {}' | xargs rm -rf
+# Color codes
+COLOR_BOLD="\033[1m"
+COLOR_CYAN="\033[36m"
+COLOR_GREEN="\033[32m"
+COLOR_YELLOW="\033[33m"
+COLOR_BLUE="\033[34m"
+COLOR_MAGENTA="\033[35m"
+COLOR_RESET="\033[0m"
+
+# Cleanup function to remove all node_modules directories
+cleanup() {
+  find "$REPOS" -name 'node_modules' -type d -prune | fzf -m --preview 'du -sh {}' | xargs rm -rf
+}
+
+# Utility function to show the help message
+show_help() {
+  echo -e "${COLOR_BOLD}${COLOR_CYAN}Node Modules Cleaner${COLOR_RESET}"
+  echo -e "${COLOR_BOLD}Usage:${COLOR_MAGENTA} cleanup ${COLOR_GREEN}"
+  echo
+  echo -e "This script will search for all node_modules directories in the given directory and remove them."
+}
+
+# Main logic
+case $1 in
+  -h|--help)
+    show_help
+    ;;
+  *)
+    cleanup
+    ;;
+esac
