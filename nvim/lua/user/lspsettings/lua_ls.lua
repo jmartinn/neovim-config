@@ -23,12 +23,12 @@ return {
       },
       hint = {
         enable = true,
-        -- arrayIndex = "Disable", -- "Enable" | "Auto" | "Disable"
-        -- await = true,
-        -- paramName = "Disable", -- "All" | "Literal" | "Disable"
-        -- paramType = true,
-        -- semicolon = "All", -- "All" | "SameLine" | "Disable"
-        -- setType = false,
+        arrayIndex = "Disable", -- "Enable" | "Auto" | "Disable"
+        await = true,
+        paramName = "All", -- "All" | "Literal" | "Disable"
+        paramType = true,
+        semicolon = "Disable", -- "All" | "SameLine" | "Disable"
+        setType = false,
       },
       telemetry = {
         enable = false,

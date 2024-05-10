@@ -8,7 +8,6 @@ local M = {
 }
 
 function M.config()
-	local wk = require("which-key")
 	local harpoon = require("harpoon")
 
 	-- Setup Harpoon
