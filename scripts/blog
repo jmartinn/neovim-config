@@ -4,9 +4,6 @@ if [ -f "$HOME/dotfiles/.env" ]; then
     source "$HOME/dotfiles/.env"
 fi
 
-# Configuration
-CONTENT_DIR="$HOME/blog/content"
-
 # Color codes
 COLOR_BOLD="\033[1m"
 COLOR_CYAN="\033[36m"

@@ -91,6 +91,7 @@ function M.config()
 		"bashls",
 		"jsonls",
 		"yamlls",
+		"tailwindcss",
 	}
 
 	local default_diagnostic_config = {

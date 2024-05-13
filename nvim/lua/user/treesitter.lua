@@ -16,6 +16,7 @@ function M.config()
 			"typescript",
 			"tsx",
 			"javascript",
+      "css",
 			"jsdoc",
 		},
 		highlight = { enable = true },

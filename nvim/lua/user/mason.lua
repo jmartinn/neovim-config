@@ -17,6 +17,7 @@ function M.config()
 		"jsonls",
 		"yamlls",
 		"cmake",
+    "tailwindcss",
 	}
 
 	require("mason").setup({
