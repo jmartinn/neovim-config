@@ -19,6 +19,7 @@ function M.config()
 			names = false,
 			rgb_fn = true,
 			hsl_fn = true,
+      css = true,
 			tailwind = "both",
 		},
 		buftypes = {},
